@@ -40,7 +40,7 @@ export default function AboutSection() {
               }}
             >
               <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-                <Stack direction="row" spacing={2} alignItems="flex-start">
+                <Stack direction="row" spacing={2} sx={{ alignItems: "flex-start" }}>
                   <FormatQuoteIcon
                     sx={{
                       fontSize: 36,
