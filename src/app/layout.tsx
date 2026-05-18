@@ -5,6 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import { siteMetadata } from "@/lib/seo";
 import "./globals.css";
 
+
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta",
