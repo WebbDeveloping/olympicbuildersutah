@@ -73,37 +73,37 @@ export const site = {
       id: "project-1",
       title: "New Construction",
       caption: "Custom mountain home — Deer Valley",
-      image: "/images/project-1.jpg",
+      image: "/images/project-1.png",
     },
     {
       id: "project-2",
       title: "Custom Kitchen",
       caption: "Chef's kitchen renovation — Park City",
-      image: "/images/project-2.jpg",
+      image: "/images/project-2.png",
     },
     {
       id: "project-3",
       title: "Custom Bathroom",
       caption: "Luxury bath remodel — Old Town",
-      image: "/images/project-3.jpg",
+      image: "/images/project-3.png",
     },
     {
       id: "project-4",
       title: "Home Remodel",
       caption: "Whole-home update — Park City",
-      image: "/images/project-4.jpg",
+      image: "/images/project-4.png",
     },
     {
       id: "project-5",
       title: "Commercial Build",
       caption: "Commercial build — Park City",
-      image: "/images/project-5.jpg",
+      image: "/images/project-5.png",
     },
     {
       id: "project-6",
       title: "Interior Remodel",
       caption: "Interior transformation — Summit County",
-      image: "/images/project-6.jpg",
+      image: "/images/project-6.png",
     },
   ],
   sections: {
@@ -113,8 +113,7 @@ export const site = {
     },
     projects: {
       title: "Past Projects",
-      subtitle:
-        "Representative work across Park City and Summit County. Replace these photos with your completed projects when ready.",
+      subtitle: "Representative work across Park City and Summit County.",
     },
     whyUs: {
       title: "Why Choose Us",
@@ -127,7 +126,7 @@ export const site = {
     },
   },
   images: {
-    hero: "/images/hero.jpg",
+    hero: "/images/hero.png",
     logo: "/images/olympic-builder-logo.PNG",
   },
   nav: [
