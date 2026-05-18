@@ -51,9 +51,6 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
           >
             Email Us
           </Button>
-          <Button component="a" href="#contact" variant="contained" color="secondary" fullWidth>
-            Get Estimate
-          </Button>
         </Box>
       </Box>
     </Drawer>

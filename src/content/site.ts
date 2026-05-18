@@ -123,7 +123,7 @@ export const site = {
     contact: {
       title: "Get In Touch",
       subtitle:
-        "Ready to start your Park City project? Call, email, or send us a message for a free estimate.",
+        "Ready to start your Park City project? Call or email Lee Zenger to discuss your project.",
     },
   },
   images: {
@@ -137,13 +137,4 @@ export const site = {
     { label: "Why Us", href: "#why-us" },
     { label: "Contact", href: "#contact" },
   ],
-  projectTypes: [
-    "New Construction",
-    "Kitchen",
-    "Bathroom",
-    "Remodel",
-    "Other",
-  ],
 } as const;
-
-export type ProjectType = (typeof site.projectTypes)[number];

@@ -11,6 +11,7 @@ import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from "@mui/icons-material/Menu";
 import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
 import { site } from "@/content/site";
 import MobileNav from "./MobileNav";
 
@@ -94,8 +95,14 @@ export default function SiteHeader() {
               >
                 {site.phone}
               </Button>
-              <Button component="a" href="#contact" variant="contained" color="primary">
-                Get Estimate
+              <Button
+                component="a"
+                href={`mailto:${site.email}`}
+                variant="contained"
+                color="primary"
+                startIcon={<EmailIcon />}
+              >
+                Email
               </Button>
             </Box>
 

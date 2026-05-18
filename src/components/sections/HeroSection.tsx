@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import PhoneIcon from "@mui/icons-material/Phone";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import EmailIcon from "@mui/icons-material/Email";
 import { site } from "@/content/site";
 
 export default function HeroSection() {
@@ -74,13 +74,13 @@ export default function HeroSection() {
           <Stack direction={{ xs: "column", sm: "row" }} spacing={2} sx={{ pt: 1 }}>
             <Button
               component="a"
-              href="#contact"
+              href={`mailto:${site.email}`}
               variant="contained"
               color="primary"
               size="large"
-              endIcon={<ArrowForwardIcon />}
+              startIcon={<EmailIcon />}
             >
-              Get a Free Estimate
+              Email Us
             </Button>
             <Button
               component="a"

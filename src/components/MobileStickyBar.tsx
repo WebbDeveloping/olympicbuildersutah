@@ -36,16 +36,6 @@ export default function MobileStickyBar() {
       </Button>
       <Button
         component="a"
-        href="#contact"
-        variant="contained"
-        color="secondary"
-        fullWidth
-        size="medium"
-      >
-        Estimate
-      </Button>
-      <Button
-        component="a"
         href={`mailto:${site.email}`}
         variant="outlined"
         color="secondary"

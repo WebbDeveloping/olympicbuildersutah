@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -44,17 +43,6 @@ export default function ProjectsSection() {
                     style={{
                       objectFit: "cover",
                       transition: "transform 0.4s ease",
-                    }}
-                  />
-                  <Chip
-                    label="Sample"
-                    size="small"
-                    sx={{
-                      position: "absolute",
-                      top: 12,
-                      right: 12,
-                      bgcolor: "rgba(0,0,0,0.6)",
-                      color: "#fff",
                     }}
                   />
                 </CardMedia>
