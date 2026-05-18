@@ -32,7 +32,9 @@ export default function SiteHeader() {
         elevation={scrolled ? 2 : 0}
         sx={{
           overflow: "visible",
-          bgcolor: scrolled ? "rgba(255,255,255,0.98)" : "rgba(255,255,255,0.95)",
+          bgcolor: scrolled
+            ? "rgba(255,255,255,0.98)"
+            : "rgba(255,255,255,0.95)",
           backdropFilter: "blur(8px)",
           borderBottom: scrolled ? "1px solid" : "none",
           borderColor: "divider",
@@ -50,11 +52,9 @@ export default function SiteHeader() {
               zIndex: 1300,
               lineHeight: 0,
               pointerEvents: "auto",
-              filter: "drop-shadow(0 3px 10px rgba(0, 35, 78, 0.15))",
-              transition: "transform 0.2s ease, filter 0.2s ease",
+              transition: "transform 0.2s ease",
               "&:hover": {
                 transform: "scale(1.02)",
-                filter: "drop-shadow(0 5px 14px rgba(0, 35, 78, 0.2))",
               },
               "& img": {
                 display: "block",
@@ -115,7 +115,9 @@ export default function SiteHeader() {
               ))}
             </Box>
 
-            <Box sx={{ display: { xs: "none", md: "flex" }, gap: 1, ml: "auto" }}>
+            <Box
+              sx={{ display: { xs: "none", md: "flex" }, gap: 1, ml: "auto" }}
+            >
               <Button
                 component="a"
                 href={`tel:${site.phoneTel}`}
@@ -137,7 +139,11 @@ export default function SiteHeader() {
             </Box>
 
             <IconButton
-              sx={{ display: { md: "none" }, ml: "auto", color: "text.primary" }}
+              sx={{
+                display: { md: "none" },
+                ml: "auto",
+                color: "text.primary",
+              }}
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >
