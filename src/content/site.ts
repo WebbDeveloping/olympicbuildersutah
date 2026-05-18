@@ -4,7 +4,7 @@ export const site = {
   phone: "385-252-8213",
   phoneTel: "3852528213",
   email: "olympicbuildersutah@gmail.com",
-  owner: "Lee Zenger",
+  owner: "Skip Zenger",
   serviceAreas: ["Park City"],
   serviceAreaDescription:
     "Park City and surrounding Summit County — including Deer Valley, Old Town, and the Canyons.",
@@ -14,19 +14,19 @@ export const site = {
   about: {
     title: "About Olympic Builders",
     subtitle: "The general contractor Park City trusts",
-    body: "For more than two decades, Olympic Builders has been the name Park City homeowners call when quality cannot be compromised. Led by Lee Zenger, our locally owned team builds and renovates mountain homes across Park City—from Deer Valley and the Canyons to Old Town and beyond. We understand alpine construction, local codes, and the standards this community demands. When you want a builder who treats your home like their own, you want Olympic Builders.",
+    body: "For more than two decades, Olympic Builders has been the name Park City homeowners call when quality cannot be compromised. Led by Skip Zenger, our locally owned team builds and renovates mountain homes across Park City—from Deer Valley and the Canyons to Old Town and beyond. We understand alpine construction, local codes, and the standards this community demands. When you want a builder who treats your home like their own, you want Olympic Builders.",
     experienceLine: "Park City's trusted builder since 2000",
   },
   quote: {
     text: "In Park City, your home is more than an investment—it's where you live your best life. My promise is to bring honesty, expert craftsmanship, and respect for your vision to every project we take on.",
-    author: "Lee Zenger",
+    author: "Skip Zenger",
   },
   services: [
     {
       id: "new-construction",
       title: "New Construction",
       description:
-        "We build custom homes and commercial spaces designed for Park City's altitude, weather, and architectural character. From groundbreaking to final walkthrough, Lee and our team manage every detail with precision.",
+        "We build custom homes and commercial spaces designed for Park City's altitude, weather, and architectural character. From groundbreaking to final walkthrough, Skip and our team manage every detail with precision.",
       icon: "HomeWork" as const,
     },
     {
@@ -65,7 +65,7 @@ export const site = {
     {
       title: "Owner-Led Accountability",
       description:
-        "Lee Zenger is personally involved in your project—not handed off to a faceless crew. That is why Park City clients refer Olympic Builders again and again.",
+        "Skip Zenger is personally involved in your project—not handed off to a faceless crew. That is why Park City clients refer Olympic Builders again and again.",
     },
   ],
   projects: [
@@ -122,7 +122,7 @@ export const site = {
     contact: {
       title: "Get In Touch",
       subtitle:
-        "Ready to start your Park City project? Call or email Lee Zenger to discuss your project.",
+        "Ready to start your Park City project? Call or email Skip Zenger to discuss your project.",
     },
   },
   images: {

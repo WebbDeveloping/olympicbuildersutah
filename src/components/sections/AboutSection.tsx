@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { site } from "@/content/site";
@@ -35,27 +36,31 @@ export default function AboutSection() {
               sx={{
                 bgcolor: "secondary.main",
                 color: "secondary.contrastText",
-                position: "relative",
-                overflow: "visible",
+                overflow: "hidden",
               }}
             >
-              <FormatQuoteIcon
-                sx={{
-                  position: "absolute",
-                  top: -12,
-                  left: 24,
-                  fontSize: 48,
-                  color: brandColors.gold,
-                  opacity: 0.9,
-                }}
-              />
-              <CardContent sx={{ p: { xs: 3, md: 4 }, pt: 4 }}>
-                <Typography variant="body1" sx={{ fontStyle: "italic", lineHeight: 1.8, mb: 2 }}>
-                  &ldquo;{site.quote.text}&rdquo;
-                </Typography>
-                <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
-                  — {site.quote.author}
-                </Typography>
+              <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+                <Stack direction="row" spacing={2} alignItems="flex-start">
+                  <FormatQuoteIcon
+                    sx={{
+                      fontSize: 36,
+                      color: brandColors.gold,
+                      flexShrink: 0,
+                      mt: 0.25,
+                    }}
+                  />
+                  <Box sx={{ minWidth: 0 }}>
+                    <Typography
+                      variant="body1"
+                      sx={{ fontStyle: "italic", lineHeight: 1.8, mb: 2 }}
+                    >
+                      {site.quote.text}
+                    </Typography>
+                    <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
+                      — {site.quote.author}
+                    </Typography>
+                  </Box>
+                </Stack>
               </CardContent>
             </Card>
           </Grid>

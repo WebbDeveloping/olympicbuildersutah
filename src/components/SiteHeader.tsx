@@ -31,38 +31,67 @@ export default function SiteHeader() {
         position="fixed"
         elevation={scrolled ? 2 : 0}
         sx={{
+          overflow: "visible",
           bgcolor: scrolled ? "rgba(255,255,255,0.98)" : "rgba(255,255,255,0.95)",
           backdropFilter: "blur(8px)",
           borderBottom: scrolled ? "1px solid" : "none",
           borderColor: "divider",
         }}
       >
-        <Container maxWidth="lg">
-          <Toolbar disableGutters sx={{ minHeight: { xs: 64, md: 72 }, gap: 2 }}>
+        <Container maxWidth="lg" sx={{ position: "relative" }}>
+          <Box
+            component={Link}
+            href="#"
+            aria-label={`${site.name} home`}
+            sx={{
+              position: "absolute",
+              left: { xs: 4, sm: 8, md: 0 },
+              top: { xs: 2, md: 4 },
+              zIndex: 1300,
+              lineHeight: 0,
+              pointerEvents: "auto",
+              filter: "drop-shadow(0 3px 10px rgba(0, 35, 78, 0.15))",
+              transition: "transform 0.2s ease, filter 0.2s ease",
+              "&:hover": {
+                transform: "scale(1.02)",
+                filter: "drop-shadow(0 5px 14px rgba(0, 35, 78, 0.2))",
+              },
+              "& img": {
+                display: "block",
+                height: "auto",
+                width: "auto",
+                maxHeight: { xs: 96, sm: 120, md: 160 },
+                maxWidth: { xs: 168, sm: 210, md: 280 },
+              },
+            }}
+          >
+            <Image
+              src={site.images.logo}
+              alt={site.name}
+              width={320}
+              height={213}
+              priority
+              sizes="(max-width: 600px) 168px, 280px"
+            />
+          </Box>
+
+          <Toolbar
+            disableGutters
+            sx={{
+              position: "relative",
+              zIndex: 1,
+              minHeight: { xs: 64, md: 72 },
+              gap: 2,
+            }}
+          >
+            {/* Reserve horizontal space so nav links stay clear of the overlapping logo */}
             <Box
-              component={Link}
-              href="#"
+              aria-hidden
               sx={{
-                display: "flex",
-                alignItems: "center",
                 flexShrink: 0,
-                "& img": {
-                  height: "auto",
-                  width: "auto",
-                  maxHeight: 52,
-                  maxWidth: { xs: 160, sm: 200, md: 220 },
-                },
+                width: { xs: 172, sm: 220, md: 292 },
               }}
-            >
-              <Image
-                src={site.images.logo}
-                alt={site.name}
-                width={220}
-                height={147}
-                priority
-                sizes="(max-width: 600px) 160px, 220px"
-              />
-            </Box>
+            />
 
             <Box
               sx={{
@@ -70,6 +99,7 @@ export default function SiteHeader() {
                 gap: 0.5,
                 flex: 1,
                 justifyContent: "center",
+                minWidth: 0,
               }}
             >
               {site.nav.map((item) => (
@@ -85,7 +115,7 @@ export default function SiteHeader() {
               ))}
             </Box>
 
-            <Box sx={{ display: { xs: "none", md: "flex" }, gap: 1 }}>
+            <Box sx={{ display: { xs: "none", md: "flex" }, gap: 1, ml: "auto" }}>
               <Button
                 component="a"
                 href={`tel:${site.phoneTel}`}

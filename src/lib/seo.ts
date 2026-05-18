@@ -11,7 +11,7 @@ export const siteMetadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "Olympic Builders — Park City's trusted general contractor since 2000. Custom homes, luxury kitchens, baths, and remodels. Call Lee Zenger for a free estimate.",
+    "Olympic Builders — Park City's trusted general contractor since 2000. Custom homes, luxury kitchens, baths, and remodels. Call Skip Zenger for a free estimate.",
   keywords: [
     "Park City general contractor",
     "Park City home builder",
@@ -21,7 +21,7 @@ export const siteMetadata: Metadata = {
     "Deer Valley contractor",
     "Summit County contractor",
     "Olympic Builders",
-    "Lee Zenger contractor",
+    "Skip Zenger contractor",
   ],
   openGraph: {
     type: "website",
