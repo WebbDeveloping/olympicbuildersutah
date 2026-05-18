@@ -33,10 +33,10 @@ export const siteMetadata: Metadata = {
       "Park City's trusted builder since 2000. New construction, kitchens, bathrooms, and home remodeling. Free estimates.",
     images: [
       {
-        url: "/images/hero.jpg",
-        width: 1200,
-        height: 630,
-        alt: `${site.name} — Park City general contractor`,
+        url: site.images.logo,
+        width: 1536,
+        height: 1024,
+        alt: `${site.name} logo`,
       },
     ],
   },
